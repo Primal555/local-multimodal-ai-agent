@@ -1,4 +1,4 @@
-# Local Multimodal AI Agent
+﻿# Local Multimodal AI Agent
 
 本项目为本地多模态 AI 助手，支持论文与图像的语义检索、自动分类与整理。系统采用模块化设计，可替换不同嵌入模型与向量数据库，满足本地离线使用需求。
 
@@ -96,10 +96,10 @@ retrieval:
 
 ## 4. 技术选型说明
 
-**文本嵌入**：`sentence-transformers`  
-**图像嵌入**：`CLIP`（HuggingFace Transformers）  
-**向量数据库**：`ChromaDB`  
-**PDF 解析**：`pypdf`  
+**文本嵌入**：`sentence-transformers`
+**图像嵌入**：`CLIP`（HuggingFace Transformers）
+**向量数据库**：`ChromaDB`
+**PDF 解析**：`pypdf`
 
 可替换配置路径与模型：
 - 修改 `config/default_config.yaml` 中的 `models.text_embedding` / `models.clip_model`
@@ -110,9 +110,35 @@ retrieval:
 ```
 Experiment2/
   agent/
+    __init__.py
+    config.py
+    document_manager.py
+    image_manager.py
+    topic_classifier.py
+    embeddings/
+      base.py
+      clip_embedding.py
+      text_embedding.py
+    storage/
+      vector_store.py
+    utils/
+      files.py
+      pdf.py
   config/
+    default_config.yaml
+    topics.yaml
   data/
+    documents/            # 运行时生成，存放分类后的论文
+    images/               # 运行时生成，存放索引后的图像
   storage/
+    chroma/               # 运行时生成，ChromaDB 持久化数据
+  docs/
+    add_papers.png
+    organize_papers.png
+    search_paper.png
+    index_image.png
+    search_image.png
+  .gitignore
   main.py
   requirements.txt
   README.md
