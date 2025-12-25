@@ -1,0 +1,24 @@
+topics:
+  CV:
+    description: Computer vision, recognition, detection, multimodal perception, and image generation research.
+    folder: CV
+  NLP:
+    description: Natural language processing, large language models, translation, dialogue systems, and summarization.
+    folder: NLP
+  RL:
+    description: Reinforcement learning, decision making, control, and planning algorithms.
+    folder: RL
+  Multimodal:
+    description: Cross-modal reasoning that combines images, video, audio, or sensor data with language.
+    folder: Multimodal
+  Antenna:
+    description: Antenna design, array antennas, beamforming, radiation patterns, antenna optimization.
+    folder: Antenna
+  Wireless:
+    description: Wireless communication, channel modeling, modulation, coding, MIMO, OFDM, 5G/6G.
+    folder: Wireless
+  Signal:
+    description: Signal processing, filtering, estimation, detection, and communication signal analysis.
+    folder: Signal
+
+

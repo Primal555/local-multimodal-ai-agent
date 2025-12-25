@@ -1,0 +1,13 @@
+paths:
+  document_library: data/documents
+  image_library: data/images
+  vector_store_path: storage/chroma
+models:
+  text_embedding: sentence-transformers/all-MiniLM-L6-v2
+  clip_model: openai/clip-vit-base-patch32
+classification:
+  threshold: 0.2
+  uncategorized_folder: Uncategorized
+retrieval:
+  threshold: 0.35
+  image_threshold: 0.4
