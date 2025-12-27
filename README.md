@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 **单篇论文分类**
 ```bash
-python main.py add_paper "C:\path\paper.pdf" --topics "CV,NLP,RL,Multimodal"
+python main.py add_paper "C:\path\paper.pdf" --topics "CV,NLP,RL,Multimodal,antenna,wireless,signal"
 ```
 ![add_paper 结果](docs/add_papers.png)
 
@@ -51,7 +51,7 @@ python main.py organize_papers "C:\path\papers"
 
 **语义检索**
 ```bash
-python main.py search_paper "Transformer 的核心架构是什么？"
+python main.py search_paper "what is large language model?"
 ```
 ![search_paper 结果](docs/search_paper.png)
 
@@ -65,7 +65,7 @@ python main.py index_images "C:\path\images"
 
 **以文搜图**
 ```bash
-python main.py search_image "sunset by the sea" --top_k 5
+python main.py search_image "masked rider" --top_k 5
 ```
 ![search_image 结果](docs/search_image.png)
 
